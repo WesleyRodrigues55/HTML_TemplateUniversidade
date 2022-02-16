@@ -382,6 +382,9 @@ p {
     .biblioteca {
         padding: 0 20px;
     }
+    .formulario {
+        padding: 20px;
+    }
 }
 
 @media screen and (max-width: 576px) {
