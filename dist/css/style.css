@@ -140,6 +140,11 @@ p {
     width: 96px;
 }
 
+.navbar-toggler:focus {
+    box-shadow: none;
+    border: unset;
+}
+
 .nav-link {
     color: #64a227;
     padding: 10px 15px !important;
