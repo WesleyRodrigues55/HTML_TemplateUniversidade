@@ -277,7 +277,7 @@ p {
 
 .formulario>h2 {
     color: #494848;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
 }
 
@@ -287,7 +287,7 @@ p {
 
 .input {
     margin: 20px 0;
-    padding: 12px 0;
+    padding: 12px 5px;
     border: 1px solid #545454;
     box-shadow: 0 0 1px 0 #545454;
     border-radius: 0px;
@@ -355,7 +355,7 @@ p {
     .biblioteca>h2,
     .courses>h2,
     .formulario>h2 {
-        font-size: 50px;
+        font-size: 35px;
     }
     .imagem_apresentacao {
         display: none;
@@ -383,7 +383,7 @@ p {
     .biblioteca>h2,
     .courses>h2,
     .formulario>h2 {
-        font-size: 40px;
+        font-size: 30px;
     }
     .box_banner {
         padding: 0 20px;
@@ -404,7 +404,7 @@ p {
     .biblioteca>h2,
     .courses>h2,
     .formulario>h2 {
-        font-size: 40px;
+        font-size: 25px;
     }
     .button {
         border: 2px solid #64a227;
