@@ -340,6 +340,11 @@ p {
 */
 
 @media screen and (max-width: 1400px) {
+    .biblioteca>h2,
+    .courses>h2,
+    .formulario>h2 {
+        font-size: 35px;
+    }
     .imagem_carousel {
         width: 280px;
     }
