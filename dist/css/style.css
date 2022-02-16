@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 700;
+    overflow-x: hidden;
+}
+
+
+/* 
+    tipografia
+*/
+
+h1 {
+    color: #fff;
+    font-size: 50px;
+    text-shadow: 2px 5px 5px #000;
+    font-weight: bold;
+}
+
+h3 {
+    color: #fff;
+    font-size: 22px;
+    text-shadow: 1px 1px 1px #000;
+    font-weight: bold;
+}
+
+p {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+
+/* 
+    buttons
+*/
+
+.box_buttons {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button {
+    text-decoration: none;
+    background: #64a227;
+    border: 4px solid #64a227;
+    color: #fff;
+    padding: 10px 30px;
+    margin: 5px 5px 5px 0;
+}
+
+.button_outline {
+    text-decoration: none;
+    border: 4px solid #64a227;
+    background: transparent;
+    color: #fff;
+    padding: 10px 30px;
+    margin: 5px 5px 5px 0;
+}
+
+.button:hover {
+    color: #fff;
+    background: #598f23;
+    border: 4px solid #598f23;
+    transition: background 1s, border 1s;
+}
+
+.button_outline:hover {
+    color: #fff;
+    border: 4px solid #598f23;
+    background: #598f23;
+    transition: background 1s, border 1s;
+}
+
+
+/* 
+    header
+*/
+
+.content_flex_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #64a227;
+    padding: 0 10px;
+}
+
+.box_header {
+    display: flex;
+    align-items: center;
+}
+
+.box_header>p {
+    color: #fff;
+    margin: 10px 20px;
+}
+
+.box_header>i {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.box_header>select {
+    background: transparent;
+    color: #fff;
+    border: unset;
+}
+
+.box_header>select>option {
+    color: #000;
+}
+
+.box_header>select:focus {
+    color: #fff;
+    background: transparent;
+    box-shadow: none;
+    border: unset;
+}
+
+
+/* 
+    navigation
+*/
+
+.navigation {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 5px 0 #494848;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 96px;
+}
+
+.nav-link {
+    color: #64a227;
+    padding: 10px 15px !important;
+    margin: 0 10px;
+}
+
+.nav-link:hover {
+    color: #fff;
+    background: #64a227;
+    box-shadow: 0 0 5px 0 #494848;
+    transition: background 0.5s, box-shadow 0.5s;
+}
+
+.nav-link:focus {
+    color: #fff;
+    background: #64a227;
+}
+
+
+/* 
+    banner
+*/
+
+.carousel_image {
+    background: url('../../assets/img/banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 100%;
+}
+
+.box_banner {
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 150px;
+    padding-left: 40px;
+    padding-right: 30px;
+}
+
+
+/* 
+    courses
+*/
+
+.courses {
+    margin: 80px 0;
+}
+
+.carousel_item {
+    margin: 0 5px;
+}
+
+.courses>h2 {
+    color: #494848;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.content_carousel {
+    text-decoration: none;
+}
+
+.imagem_carousel {
+    width: 300px;
+    filter: contrast(80%);
+    transition: filter 1s;
+}
+
+.imagem_carousel:hover {
+    filter: contrast(110%);
+    transition: filter 1s;
+}
+
+.box_courses_content {
+    background: #64a227;
+    padding: 10px;
+}
+
+.access {
+    color: #fff;
+}
+
+
+/* 
+    biblioteca
+*/
+
+.biblioteca {
+    background-image: url('../../assets/img/biblioteca.png');
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 50px;
+}
+
+.biblioteca>h2 {
+    color: #fff;
+    font-size: 50px;
+    text-shadow: 1px 1px 5px #000;
+    font-weight: bold;
+}
+
+
+/* 
+    contato
+*/
+
+.contato {
+    margin: 80px 0;
+    padding: 0 40px;
+}
+
+.box_contato {}
+
+.formulario {
+    padding: 40px;
+}
+
+.formulario>h2 {
+    color: #494848;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.formulario>p {
+    color: #494848;
+}
+
+.input {
+    margin: 20px 0;
+    padding: 12px 0;
+    border: 1px solid #545454;
+    box-shadow: 0 0 1px 0 #545454;
+    border-radius: 0px;
+}
+
+.input:focus {
+    border: 1px solid #64a227;
+    box-shadow: unset;
+}
+
+.imagem_apresentacao {
+    padding: 40px;
+}
+
+.imagem_contato {
+    width: 450px;
+    border-radius: 5%;
+    box-shadow: 0 0 5px 0 #545454;
+}
+
+
+/* 
+    footer
+*/
+
+.footer {
+    background: #545454;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 20px 40px 20px;
+    text-align: center;
+}
+
+.icon_footer {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+}
+
+.icon_footer:hover {
+    color: #598f23;
+    transition: color 1s;
+}
+
+
+/* 
+    dimensões
+*/
+
+@media screen and (max-width: 1400px) {
+    .imagem_carousel {
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .imagem_contato {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .biblioteca>h2,
+    .courses>h2,
+    .formulario>h2 {
+        font-size: 50px;
+    }
+    .imagem_apresentacao {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 45px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .imagem_carousel {
+        width: 200px;
+    }
+    .biblioteca>h2,
+    .courses>h2,
+    .formulario>h2 {
+        font-size: 40px;
+    }
+    .box_banner {
+        padding: 0 20px;
+        padding-bottom: 100px;
+    }
+    .biblioteca {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    p {
+        font-size: 14px;
+    }
+    .biblioteca>h2,
+    .courses>h2,
+    .formulario>h2 {
+        font-size: 40px;
+    }
+    .button {
+        border: 2px solid #64a227;
+        padding: 10px 20px;
+        margin: 5px;
+    }
+    .button_outline {
+        border: 2px solid #64a227;
+        padding: 10px 20px;
+        margin: 5px;
+    }
+}
