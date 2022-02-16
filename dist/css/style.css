@@ -343,6 +343,12 @@ p {
     .imagem_carousel {
         width: 280px;
     }
+    .box_banner {
+        padding-top: 10px;
+        padding-bottom: 80px;
+        padding-left: 40px;
+        padding-right: 30px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
