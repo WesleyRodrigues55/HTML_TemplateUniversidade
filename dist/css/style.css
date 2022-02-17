@@ -1,6 +1,20 @@
 /* 
     @author Wesley Rodrigues
     GitHub: https://github.com/WesleyRodrigues55
+
+    List
+    1 - Tipografia
+    2 - Buttons
+    3 - Icones
+    4 - Header
+    5 - Navegação
+    6 - Banner
+    7 - Cursos 
+    8 - Biblioteca
+    9 - Contato
+    10 - Footer
+    11 - Dimensões (@media)
+
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
@@ -18,7 +32,7 @@ body {
 
 
 /* 
-    tipografia
+    ================= 1 - Tipografia ================= 
 */
 
 h1 {
@@ -41,9 +55,37 @@ p {
     margin-bottom: 0;
 }
 
+.box_header>p {
+    color: #fff;
+    margin: 10px 20px;
+}
+
+.courses>h2 {
+    color: #494848;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.biblioteca>h2 {
+    color: #fff;
+    font-size: 50px;
+    text-shadow: 1px 1px 5px #000;
+    font-weight: bold;
+}
+
+.formulario>h2 {
+    color: #494848;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.formulario>p {
+    color: #494848;
+}
+
 
 /* 
-    buttons
+     ================= 2 - Buttons ================= 
 */
 
 .box_buttons {
@@ -86,7 +128,30 @@ p {
 
 
 /* 
-    header
+     ================= 3 - Icones ================= 
+*/
+
+.box_header>i {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.navbar-toggler>i {
+    font-size: 25px;
+}
+
+.logo {
+    width: 96px;
+}
+
+.icon_top {
+    display: none;
+}
+
+
+/* 
+     ================= 4 - Header ================= 
 */
 
 .content_flex_header {
@@ -100,17 +165,6 @@ p {
 .box_header {
     display: flex;
     align-items: center;
-}
-
-.box_header>p {
-    color: #fff;
-    margin: 10px 20px;
-}
-
-.box_header>i {
-    color: #fff;
-    font-size: 20px;
-    margin: 0 10px;
 }
 
 .box_header>select {
@@ -132,21 +186,13 @@ p {
 
 
 /* 
-    navigation
+     ================= 5 - Navegação ================= 
 */
 
 .navigation {
     background: #fff;
     box-shadow: 0 0 5px 0 #494848;
     padding: 20px 0;
-}
-
-.navbar-toggler>i {
-    font-size: 25px;
-}
-
-.logo {
-    width: 96px;
 }
 
 .home {
@@ -178,7 +224,7 @@ p {
 
 
 /* 
-    banner
+     ================= 6 - Banner ================= 
 */
 
 .carousel_image {
@@ -204,7 +250,7 @@ p {
 
 
 /* 
-    courses
+     ================= 7 - Cursos ================= 
 */
 
 .courses {
@@ -213,12 +259,6 @@ p {
 
 .carousel_item {
     margin: 0 5px;
-}
-
-.courses>h2 {
-    color: #494848;
-    font-size: 50px;
-    font-weight: bold;
 }
 
 .content_carousel {
@@ -247,7 +287,7 @@ p {
 
 
 /* 
-    biblioteca
+     ================= 8 - Biblioteca ================= 
 */
 
 .biblioteca {
@@ -260,16 +300,9 @@ p {
     padding: 0 50px;
 }
 
-.biblioteca>h2 {
-    color: #fff;
-    font-size: 50px;
-    text-shadow: 1px 1px 5px #000;
-    font-weight: bold;
-}
-
 
 /* 
-    contato
+     ================= 9 - Contato ================= 
 */
 
 .contato {
@@ -277,20 +310,8 @@ p {
     padding: 0 40px;
 }
 
-.box_contato {}
-
 .formulario {
     padding: 40px;
-}
-
-.formulario>h2 {
-    color: #494848;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.formulario>p {
-    color: #494848;
 }
 
 .input {
@@ -318,7 +339,7 @@ p {
 
 
 /* 
-    footer
+     ================= 10 - Footer ================= 
 */
 
 .footer {
@@ -331,24 +352,9 @@ p {
     text-align: center;
 }
 
-.icon_footer {
-    text-decoration: none;
-    color: #fff;
-    font-size: 30px;
-}
-
-.icon_footer:hover {
-    color: #598f23;
-    transition: color 1s;
-}
-
-.icon_top {
-    display: none;
-}
-
 
 /* 
-    dimensões
+     ================= 11 - Dimensões ================= 
 */
 
 @media screen and (max-width: 1400px) {
