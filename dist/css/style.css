@@ -428,8 +428,8 @@ p {
         display: block;
         position: fixed;
         right: 0;
-        bottom: 200px;
-        font-size: 25px;
+        bottom: 100px;
+        font-size: 30px;
         margin: 5px;
         z-index: 9999;
         color: #494848;
