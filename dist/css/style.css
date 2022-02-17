@@ -136,13 +136,21 @@ p {
 */
 
 .navigation {
-    background: rgba(255, 255, 255, 0.9);
+    background: #fff;
     box-shadow: 0 0 5px 0 #494848;
     padding: 20px 0;
 }
 
+.navbar-toggler>i {
+    font-size: 25px;
+}
+
 .logo {
     width: 96px;
+}
+
+.home {
+    display: block;
 }
 
 .navbar-toggler:focus {
@@ -334,6 +342,10 @@ p {
     transition: color 1s;
 }
 
+.icon_top {
+    display: none;
+}
+
 
 /* 
     dimensões
@@ -383,6 +395,12 @@ p {
     p {
         font-size: 16px;
     }
+    .navbar_mobile {
+        margin-top: 20px;
+    }
+    .home {
+        display: none;
+    }
     .box_header>p {
         font-size: 10px;
         margin: 0;
@@ -405,6 +423,16 @@ p {
     }
     .formulario {
         padding: 20px;
+    }
+    .icon_top {
+        display: block;
+        position: fixed;
+        right: 0;
+        bottom: 200px;
+        font-size: 25px;
+        margin: 5px;
+        z-index: 9999;
+        color: #494848;
     }
 }
 

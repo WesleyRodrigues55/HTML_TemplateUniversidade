@@ -48,15 +48,21 @@
         </div>
 
     </header>
+
+    <!-- botão topo -->
+    <a href="javascript:void(0)" id="go-topo"><i class="bi bi-arrow-up-circle-fill icon_top"></i></a>
+
     <div class="navbar navbar-expand-lg navigation sticky-top">
         <div class="container">
-            <img src="assets/img/logo.png" alt="" class="logo">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="bi bi-list"></i>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <a href=""><img src="assets/img/logo.png" alt="" class="logo"></a>
+            <div class="d-flex align-items-center">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end navbar_mobile" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="javascript:void(0)" id="go-topo">HOME</a>
+                    <a class="nav-link home" href="">HOME</a>
                     <a class="nav-link" href="javascript:void(0)" id="go-cursos">CURSOS</a>
                     <a class="nav-link" href="javascript:void(0)" id="go-biblioteca">BIBLIOTECA</a>
                     <a class="nav-link" href="javascript:void(0)" id="go-contato">CONTATO</a>
@@ -212,7 +218,7 @@
                         <input type="text" placeholder="Digite seu E-mail" class="form-control input">
                         <textarea name="" placeholder="Deixe seu comentário" id="" rows="6" class="form-control input"></textarea>
                         <br>
-                        <a href="javascript::vois(0)" class="button" onclick="(function(){window.alert('Sem ação');})()">Enviar</a>
+                        <a href="javascript:void(0)" class="button" onclick="(function(){window.alert('Sem ação');})()">Enviar</a>
                     </form>
                 </div>
                 <div class="col-md-12 col-lg-1"></div>
@@ -227,6 +233,9 @@
         <p>Todos os diretos reservados<br>&copy;Welão</p>
     </footer>
 
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
@@ -234,6 +243,27 @@
 
     <script src="dist/js/carousel.js"></script>
     <script src="dist/js/scroll.js"></script>
+
+    <script>
+        function none() {
+            var posicaoAtual = document.documentElement.scrollTop;
+
+
+            if (posicaoAtual >= 250) {
+                document.getElementById("go-topo").style.display = "block";
+            } else {
+                document.getElementById("go-topo").style.display = "none";
+            }
+        }
+
+        //Quando ocorre o scroll
+        window.onscroll = function(oEvent) {
+            none();
+        }
+        $(document).ready(function() {
+            none();
+        });
+    </script>
 
 </body>
 
